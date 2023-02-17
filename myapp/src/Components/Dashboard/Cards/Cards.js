@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Cards = (props) => {
-
     return (
         <div>
             <div class="d-sm-flex align-items-center justify-content-between mb-4">

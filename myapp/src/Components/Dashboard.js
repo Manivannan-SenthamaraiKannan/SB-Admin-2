@@ -1,6 +1,8 @@
 import React from 'react';
-import Cards from './Dashboard/Cards/Cards';
-import '../App.css';
+// import UtilitiesColors from '../Components/Dashboard/Utilities/UtilitiesColors';
+// import UtilitiesBorder from './Dashboard/Utilities/UtilitiesBorder';
+// import UtilitiesAnimation from './Dashboard/Utilities/UtilitiesAnimation';
+import UtilitiesOthers from './Dashboard/Utilities/UtilitiesOthers';
 
 const Dashboard = () => {
 
@@ -284,13 +286,9 @@ const Dashboard = () => {
                         {/* End of Topbar */}
                         {/* Begin Page Content  */}
                         <div class="container-fluid">
-
-                            {/* Page Heading  */}
-                            {/* <h1 class="h3 mb-4 text-gray-800">{ComponentHeading}</h1> */}
-                            <Cards />
+                            <UtilitiesOthers />
                         </div>
                         {/*  /.container-fluid  */}
-
                     </div>
                     {/* End of Main Content  */}
                     {/* Footer  */}
