@@ -1,8 +1,6 @@
 import React from 'react';
-// import UtilitiesColors from '../Components/Dashboard/Utilities/UtilitiesColors';
-// import UtilitiesBorder from './Dashboard/Utilities/UtilitiesBorder';
-// import UtilitiesAnimation from './Dashboard/Utilities/UtilitiesAnimation';
-import UtilitiesOthers from './Dashboard/Utilities/UtilitiesOthers';
+import '../App.css'
+import Buttons from './Dashboard/CustomComponents/Buttons';
 
 const Dashboard = () => {
 
@@ -44,7 +42,7 @@ const Dashboard = () => {
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link collapsed" href="#!S" data-toggle="collapse" data-target="#collapseUtilities"
+                        <a class="nav-link collapsed" href="#!" data-toggle="collapse" data-target="#collapseUtilities"
                             aria-expanded="true" aria-controls="collapseUtilities">
                             <i class="fas fa-fw fa-wrench"></i>
                             <span>Utilities</span>
@@ -286,7 +284,7 @@ const Dashboard = () => {
                         {/* End of Topbar */}
                         {/* Begin Page Content  */}
                         <div class="container-fluid">
-                            <UtilitiesOthers />
+                            <Buttons />
                         </div>
                         {/*  /.container-fluid  */}
                     </div>
