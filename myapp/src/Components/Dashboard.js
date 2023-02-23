@@ -1,6 +1,11 @@
 import React from 'react';
+<<<<<<< HEAD
 import '../App.css'
 import Buttons from './Dashboard/CustomComponents/Buttons';
+=======
+import "../../src/App.css"
+import "bootstrap/js/src/collapse.js";
+>>>>>>> f1d830a (Browser Router)
 
 const Dashboard = () => {
 
@@ -28,21 +33,25 @@ const Dashboard = () => {
                         Interface
                     </div>
                     <li class="nav-item">
-                        <a class="nav-link collapsed" href="#!" data-toggle="collapse" data-target="#collapseTwo"
+                        <a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                             aria-expanded="true" aria-controls="collapseTwo">
                             <i class="fas fa-fw fa-cog"></i>
                             <span>Components</span>
                         </a>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">Custom Components:</h6>
-                                <a class="collapse-item" href="#!">Buttons</a>
-                                <a class="collapse-item" href="#!S">Cards</a>
+                                <a class="collapse-item" href="buttons.html">Buttons</a>
+                                <a class="collapse-item" href="cards.html">Cards</a>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
+<<<<<<< HEAD
                         <a class="nav-link collapsed" href="#!" data-toggle="collapse" data-target="#collapseUtilities"
+=======
+                        <a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#collapseUtilities"
+>>>>>>> f1d830a (Browser Router)
                             aria-expanded="true" aria-controls="collapseUtilities">
                             <i class="fas fa-fw fa-wrench"></i>
                             <span>Utilities</span>
@@ -62,13 +71,13 @@ const Dashboard = () => {
                     <div class="sidebar-heading">
                         Addons
                     </div>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#!" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="true"
                             aria-controls="collapsePages">
                             <i class="fas fa-fw fa-folder"></i>
                             <span>Pages</span>
                         </a>
-                        <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+                        <div id="collapsePages" class="collapse" aria-labelledby="headingPages"
                             data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">Login Screens:</h6>
@@ -95,7 +104,11 @@ const Dashboard = () => {
                     </li>
                     <hr class="sidebar-divider d-none d-md-block"></hr>
                     <div class="text-center d-none d-md-inline">
-                        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                        <button class="navbar-toggler rounded-circle border-0" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" 
+                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                        id="sidebarToggle"></button>
                     </div>
                 </ul>
                 {/* End of Side Bar */}
@@ -284,7 +297,11 @@ const Dashboard = () => {
                         {/* End of Topbar */}
                         {/* Begin Page Content  */}
                         <div class="container-fluid">
+<<<<<<< HEAD
                             <Buttons />
+=======
+
+>>>>>>> f1d830a (Browser Router)
                         </div>
                         {/*  /.container-fluid  */}
                     </div>
