@@ -1,10 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import '../App.css'
-=======
 import "../../src/App.css"
 import "bootstrap/js/src/collapse.js";
->>>>>>> f1d830a (Browser Router)
 
 const Dashboard = () => {
 
@@ -46,11 +43,7 @@ const Dashboard = () => {
                         </div>
                     </li>
                     <li class="nav-item">
-<<<<<<< HEAD
-                        <a class="nav-link collapsed" href="#!" data-toggle="collapse" data-target="#collapseUtilities"
-=======
                         <a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#collapseUtilities"
->>>>>>> f1d830a (Browser Router)
                             aria-expanded="true" aria-controls="collapseUtilities">
                             <i class="fas fa-fw fa-wrench"></i>
                             <span>Utilities</span>
@@ -296,11 +289,8 @@ const Dashboard = () => {
                         {/* End of Topbar */}
                         {/* Begin Page Content  */}
                         <div class="container-fluid">
-<<<<<<< HEAD
                         
-=======
 
->>>>>>> f1d830a (Browser Router)
                         </div>
                         {/*  /.container-fluid  */}
                     </div>
