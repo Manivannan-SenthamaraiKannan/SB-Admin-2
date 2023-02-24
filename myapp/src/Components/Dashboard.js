@@ -1,7 +1,6 @@
 import React from 'react';
 <<<<<<< HEAD
 import '../App.css'
-import Buttons from './Dashboard/CustomComponents/Buttons';
 =======
 import "../../src/App.css"
 import "bootstrap/js/src/collapse.js";
@@ -298,7 +297,7 @@ const Dashboard = () => {
                         {/* Begin Page Content  */}
                         <div class="container-fluid">
 <<<<<<< HEAD
-                            <Buttons />
+                        
 =======
 
 >>>>>>> f1d830a (Browser Router)
