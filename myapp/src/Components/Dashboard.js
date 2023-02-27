@@ -2,6 +2,10 @@ import React from 'react';
 import '../App.css'
 import "../../src/App.css"
 import "bootstrap/js/src/collapse.js";
+import Cards from "./Dashboard/Cards/Cards"
+import AreaChart from './Dashboard/Charts/AreaChart';
+import PieChart from './Dashboard/Charts/PieChart';
+import Project from './Dashboard/Charts/Project';
 
 const Dashboard = () => {
 
@@ -96,11 +100,11 @@ const Dashboard = () => {
                     </li>
                     <hr class="sidebar-divider d-none d-md-block"></hr>
                     <div class="text-center d-none d-md-inline">
-                        <button class="navbar-toggler rounded-circle border-0" type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#navbarSupportedContent" 
-                        aria-controls="navbarSupportedContent" aria-expanded="false"
-                        id="sidebarToggle"></button>
+                        <button class="navbar-toggler rounded-circle border-0" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                            id="sidebarToggle"></button>
                     </div>
                 </ul>
                 {/* End of Side Bar */}
@@ -289,8 +293,15 @@ const Dashboard = () => {
                         {/* End of Topbar */}
                         {/* Begin Page Content  */}
                         <div class="container-fluid">
-                        
-
+                            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                                <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                            </div>
+                            <Cards />
+                            <div className='row'>
+                                <AreaChart />
+                                <PieChart />
+                            </div>
+                            <Project />
                         </div>
                         {/*  /.container-fluid  */}
                     </div>
