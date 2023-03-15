@@ -1,4 +1,5 @@
 import React from 'react'
+import Image1 from '../../Assets/IMG/Image1.png'
 
 const Project = () => {
     return (
@@ -108,7 +109,7 @@ const Project = () => {
                     </div>
                     <div class="card-body">
                         <div class="text-center">
-                            <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: "25rem" }} src="/workspace/SB-Admin-2/myapp/src/Components/Assets/IMG/undraw_posting_photo.svg" alt="..." />
+                            <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: "25rem" }} src={Image1} alt="..." />
                         </div>
                         <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="#!">unDraw</a>, a
                             constantly updated collection of beautiful svg images that you can use

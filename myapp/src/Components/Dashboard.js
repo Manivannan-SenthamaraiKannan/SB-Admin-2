@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css'
 import "../../src/App.css"
 import "bootstrap/js/src/collapse.js";
+import { Link } from 'react-router-dom'
 import Cards from "./Dashboard/Cards/Cards"
 import AreaChart from './Dashboard/Charts/AreaChart';
 import PieChart from './Dashboard/Charts/PieChart';
@@ -15,18 +16,18 @@ const Dashboard = () => {
         <div className='page-top'>
             <div id='wrapper'>
                 <ul className='navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar'>
-                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#!">
+                    <Link class="sidebar-brand d-flex align-items-center justify-content-center" to="/">
                         <div class="sidebar-brand-icon rotate-n-15">
                             <i class="fas fa-laugh-wink"></i>
                         </div>
                         <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-                    </a>
+                    </Link>
                     <hr class="sidebar-divider my-0" />
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">
+                        <Link class="nav-link" to="/">
                             <i class="fas fa-fw fa-tachometer-alt"></i>
                             <span>Dashboard</span>
-                        </a>
+                        </Link>
                     </li>
                     <hr class="sidebar-divider" />
                     <div class="sidebar-heading">
@@ -41,8 +42,8 @@ const Dashboard = () => {
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">Custom Components:</h6>
-                                <a class="collapse-item" href="buttons.html">Buttons</a>
-                                <a class="collapse-item" href="cards.html">Cards</a>
+                                <Link class="collapse-item" to="/buttons">Buttons</Link>
+                                <Link class="collapse-item" to="/cards">Cards</Link>
                             </div>
                         </div>
                     </li>
@@ -56,10 +57,10 @@ const Dashboard = () => {
                             data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">Custom Utilities:</h6>
-                                <a class="collapse-item" href="#!">Colors</a>
-                                <a class="collapse-item" href="#!">Borders</a>
-                                <a class="collapse-item" href="#!">Animations</a>
-                                <a class="collapse-item" href="#!">Other</a>
+                                <Link class="collapse-item" to="/colors">Colors</Link>
+                                <Link class="collapse-item" to="/borders">Borders</Link>
+                                <Link class="collapse-item" to="/animations">Animations</Link>
+                                <Link class="collapse-item" to="/others">Other</Link>
                             </div>
                         </div>
                     </li>
@@ -68,7 +69,7 @@ const Dashboard = () => {
                         Addons
                     </div>
                     <li class="nav-item">
-                        <a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="true"
+                        <a class="nav-link collapsed" href="/" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="true"
                             aria-controls="collapsePages">
                             <i class="fas fa-fw fa-folder"></i>
                             <span>Pages</span>
@@ -77,26 +78,26 @@ const Dashboard = () => {
                             data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">Login Screens:</h6>
-                                <a class="collapse-item" href="#!">Login</a>
-                                <a class="collapse-item" href="#!">Register</a>
-                                <a class="collapse-item" href="#!">Forgot Password</a>
+                                <Link class="collapse-item" to="/login">Login</Link>
+                                <Link class="collapse-item" to="/register">Register</Link>
+                                <Link class="collapse-item" to="/forgotpassword">Forgot Password</Link>
                                 <div class="collapse-divider"></div>
                                 <h6 class="collapse-header">Other Pages:</h6>
-                                <a class="collapse-item" href="#!">404 Page</a>
-                                <a class="collapse-item active" href="#!">Blank Page</a>
+                                <Link class="collapse-item" to="/notfound">404 Page</Link>
+                                <Link class="collapse-item active" to="/blank">Blank Page</Link>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">
+                        <Link class="nav-link" to="/charts">
                             <i class="fas fa-fw fa-chart-area"></i>
                             <span>Charts</span>
-                        </a>
+                        </Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tables.html">
+                        <Link class="nav-link" to="/tables">
                             <i class="fas fa-fw fa-table"></i>
-                            <span>Tables</span></a>
+                            <span>Tables</span></Link>
                     </li>
                     <hr class="sidebar-divider d-none d-md-block"></hr>
                     <div class="text-center d-none d-md-inline">
