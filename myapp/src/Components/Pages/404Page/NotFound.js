@@ -1,45 +1,47 @@
 import React from 'react';
 import '../../../App.css';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Image2 from '../../Assets/IMG/Image2.png'
 
 const NotFound = () => {
+    const ComponentHeading = "Not Found"
     return (
         <div className='page-top'>
             <div id='wrapper'>
                 <ul className='navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar'>
-                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#!">
+                    <Link class="sidebar-brand d-flex align-items-center justify-content-center" to="/">
                         <div class="sidebar-brand-icon rotate-n-15">
                             <i class="fas fa-laugh-wink"></i>
                         </div>
                         <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
-                    </a>
+                    </Link>
                     <hr class="sidebar-divider my-0" />
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">
+                        <Link class="nav-link" to="/">
                             <i class="fas fa-fw fa-tachometer-alt"></i>
                             <span>Dashboard</span>
-                        </a>
+                        </Link>
                     </li>
                     <hr class="sidebar-divider" />
                     <div class="sidebar-heading">
                         Interface
                     </div>
                     <li class="nav-item">
-                        <a class="nav-link collapsed" href="#!" data-toggle="collapse" data-target="#collapseTwo"
+                        <a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
                             aria-expanded="true" aria-controls="collapseTwo">
                             <i class="fas fa-fw fa-cog"></i>
                             <span>Components</span>
                         </a>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">Custom Components:</h6>
-                                <a class="collapse-item" href="#!">Buttons</a>
-                                <a class="collapse-item" href="#!S">Cards</a>
+                                <Link class="collapse-item" to="/buttons">Buttons</Link>
+                                <Link class="collapse-item" to="/cards">Cards</Link>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link collapsed" href="#!S" data-toggle="collapse" data-target="#collapseUtilities"
+                        <a class="nav-link collapsed" href="#!" data-bs-toggle="collapse" data-bs-target="#collapseUtilities"
                             aria-expanded="true" aria-controls="collapseUtilities">
                             <i class="fas fa-fw fa-wrench"></i>
                             <span>Utilities</span>
@@ -48,10 +50,10 @@ const NotFound = () => {
                             data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">Custom Utilities:</h6>
-                                <a class="collapse-item" href="#!">Colors</a>
-                                <a class="collapse-item" href="#!">Borders</a>
-                                <a class="collapse-item" href="#!">Animations</a>
-                                <a class="collapse-item" href="#!">Other</a>
+                                <Link class="collapse-item" to="/colors">Colors</Link>
+                                <Link class="collapse-item" to="/borders">Borders</Link>
+                                <Link class="collapse-item" to="/animations">Animations</Link>
+                                <Link class="collapse-item" to="/others">Other</Link>
                             </div>
                         </div>
                     </li>
@@ -59,40 +61,44 @@ const NotFound = () => {
                     <div class="sidebar-heading">
                         Addons
                     </div>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#!" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="/" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="true"
                             aria-controls="collapsePages">
                             <i class="fas fa-fw fa-folder"></i>
                             <span>Pages</span>
                         </a>
-                        <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+                        <div id="collapsePages" class="collapse" aria-labelledby="headingPages"
                             data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">Login Screens:</h6>
-                                <a class="collapse-item" href="#!">Login</a>
-                                <a class="collapse-item" href="#!">Register</a>
-                                <a class="collapse-item" href="#!">Forgot Password</a>
+                                <Link class="collapse-item" to="/login">Login</Link>
+                                <Link class="collapse-item" to="/register">Register</Link>
+                                <Link class="collapse-item" to="/forgotpassword">Forgot Password</Link>
                                 <div class="collapse-divider"></div>
                                 <h6 class="collapse-header">Other Pages:</h6>
-                                <a class="collapse-item" href="#!">404 Page</a>
-                                <a class="collapse-item active" href="#!">Blank Page</a>
+                                <Link class="collapse-item" to="/notfound">404 Page</Link>
+                                <Link class="collapse-item active" to="/blank">Blank Page</Link>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#!">
+                        <Link class="nav-link" to="/charts">
                             <i class="fas fa-fw fa-chart-area"></i>
                             <span>Charts</span>
-                        </a>
+                        </Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tables.html">
+                        <Link class="nav-link" to="/tables">
                             <i class="fas fa-fw fa-table"></i>
-                            <span>Tables</span></a>
+                            <span>Tables</span></Link>
                     </li>
                     <hr class="sidebar-divider d-none d-md-block"></hr>
                     <div class="text-center d-none d-md-inline">
-                        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                        <button class="navbar-toggler rounded-circle border-0" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false"
+                            id="sidebarToggle"></button>
                     </div>
                 </ul>
                 {/* End of Side Bar */}
@@ -252,7 +258,7 @@ const NotFound = () => {
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                         <img class="img-profile rounded-circle"
-                                            src="./Assets/IMG/undraw_posting_photo.svg" alt='posting' />
+                                            src={Image2} alt='posting' />
 
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -281,6 +287,7 @@ const NotFound = () => {
                         {/* End of Topbar */}
                         {/* Begin Page Content  */}
                         <div class="container-fluid">
+                            <h1 class="h3 mb-4 text-gray-800">{ComponentHeading}</h1>
                             {/* 404 Error Text */}
                             <div class="text-center">
                                 <div class="error mx-auto" data-text="404">404</div>
@@ -288,7 +295,7 @@ const NotFound = () => {
                                 <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
                                 <a href="#!">&larr; Back to Dashboard</a>
                                 {/* <Link to="../../Dashboard.js"/> */}
-                                
+
                             </div>
                         </div>
                         {/*  /.container-fluid  */}

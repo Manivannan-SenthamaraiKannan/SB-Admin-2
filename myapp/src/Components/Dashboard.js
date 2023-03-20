@@ -7,6 +7,7 @@ import Cards from "./Dashboard/Cards/Cards"
 import AreaChart from './Dashboard/Charts/AreaChart';
 import PieChart from './Dashboard/Charts/PieChart';
 import Project from './Dashboard/Charts/Project';
+import Image2 from './Assets/IMG/Image2.png';
 
 const Dashboard = () => {
 
@@ -265,7 +266,7 @@ const Dashboard = () => {
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                         <img class="img-profile rounded-circle"
-                                            src="./Assets/IMG/undraw_posting_photo.svg" alt='posting' />
+                                            src={Image2} alt='posting' />
 
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
