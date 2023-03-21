@@ -36,7 +36,7 @@ const Buttons = () => {
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Custom Components:</h6>
                             <Link class="collapse-item" to="/buttons">Buttons</Link>
-                            <Link class="collapse-item" to="/cards">Cards</Link>
+                            <Link class="collapse-item" to="/card">Cards</Link>
                         </div>
                     </div>
                 </li>

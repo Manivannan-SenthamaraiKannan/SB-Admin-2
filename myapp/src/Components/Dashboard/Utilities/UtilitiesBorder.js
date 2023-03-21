@@ -36,7 +36,7 @@ const UtilitiesBorder = () => {
                             <div class="bg-white py-2 collapse-inner rounded">
                                 <h6 class="collapse-header">Custom Components:</h6>
                                 <Link class="collapse-item" to="/buttons">Buttons</Link>
-                                <Link class="collapse-item" to="/cards">Cards</Link>
+                                <Link class="collapse-item" to="/card">Cards</Link>
                             </div>
                         </div>
                     </li>
@@ -286,13 +286,17 @@ const UtilitiesBorder = () => {
                         </nav>
                         {/* End of Topbar */}
                         {/* Begin Page Content  */}
-                        <div class="container-fluid">
+                        <div className='container-fluid'>
                             <h1 class="h3 mb-1 text-gray-800">{componentHeading}</h1>
                             <p class="mb-4">Bootstrap's default utility classes can be found on the official <a
                                 href="https://getbootstrap.com/docs">Bootstrap Documentation</a> page. The custom utilities
                                 below were created to extend this theme past the default utility classes built into Bootstrap's
                                 framework.</p>
+
+                            {/* <!-- Content Row --> */}
                             <div class="row">
+
+                                {/* <!-- Border Left Utilities --> */}
                                 <div class="col-lg-6">
 
                                     <div class="card mb-4 py-3 border-left-primary">
@@ -339,6 +343,7 @@ const UtilitiesBorder = () => {
 
                                 </div>
 
+                                {/* <!-- Border Bottom Utilities --> */}
                                 <div class="col-lg-6">
 
                                     <div class="card mb-4 py-3 border-bottom-primary">
@@ -386,13 +391,8 @@ const UtilitiesBorder = () => {
                                 </div>
 
                             </div>
-
-                            {/* End Page Content  */}
                         </div>
-                        {/*  /.container-fluid  */}
                     </div>
-                    {/* End of Main Content  */}
-                    {/* Footer  */}
                     <footer class="sticky-footer bg-white">
                         <div class="container my-auto">
                             <div class="copyright text-center my-auto">
@@ -403,33 +403,32 @@ const UtilitiesBorder = () => {
                     {/* End of Footer */}
                 </div>
                 {/* End of Content Wrapper */}
-
-                {/* End of Page Wrapper */}
-                {/* Scroll to Top */}
-                <a class="scroll-to-top rounded" href="#page-top">
-                    <i class="fas fa-angle-up"></i>
-                </a>
-                {/* Logout Model */}
-                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                <a class="btn btn-primary" href="login.html">Logout</a>
-                            </div>
+            </div>
+            {/* End of Page Wrapper */}
+            {/* Scroll to Top */}
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+            </a>
+            {/* Logout Model */}
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                            <a class="btn btn-primary" href="login.html">Logout</a>
                         </div>
                     </div>
                 </div>
-            </div >
-        </div>
+            </div>
+        </div >
     )
 };
 
